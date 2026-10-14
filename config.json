@@ -1,0 +1,45 @@
+{
+  "shop": {
+    "name": "Fade Factory Barbershop (sample)",
+    "phone": "416-555-0142",
+    "booking_link": "fadefactory.example/book",
+    "short_name": "Fade Factory"
+  },
+  "opening": {
+    "open_days": [
+      "Tue",
+      "Wed",
+      "Thu",
+      "Fri",
+      "Sat"
+    ],
+    "open_hour": 9,
+    "close_hour": 19
+  },
+  "default_opt_in": true,
+  "reminders": {
+    "high_risk_no_shows": 2,
+    "high_risk_window_visits": 10,
+    "sms_chars_per_segment": 160
+  },
+  "rebooking": {
+    "default_interval_days": 28,
+    "min_interval_days": 7,
+    "max_interval_days": 90,
+    "due_ratio": 1.15,
+    "overdue_ratio": 1.6,
+    "lapsed_ratio": 3.0,
+    "lapse_days": 120,
+    "give_up_days": 270,
+    "cooldown_days": 14,
+    "max_messages_per_run": 30
+  },
+  "templates": {
+    "reminder": "Hi {first_name}! Reminder: {service} with {barber} {when} at {time}. Reply C to confirm. Need to change it? {shop_phone} - {shop_name}",
+    "reminder_high_risk": "Hi {first_name}, {shop_name}: your {service} with {barber} is {when} at {time}. Please reply C to keep your chair. Changes: {shop_phone}",
+    "rebook_due": "Hey {first_name}! It's been {weeks_since} weeks since your last {service}. Fresh cut time? Book with {barber}: {booking_link} - {shop_name}",
+    "rebook_overdue": "Hi {first_name}, you're usually in every {interval_weeks} wks and it's been {weeks_since}. Want a chair with {barber}? {booking_link} - {shop_name}",
+    "rebook_lapsed": "Hi {first_name}, we miss you at {shop_name}! It's been {weeks_since} weeks. Come back for a fresh {service}: {booking_link}",
+    "opt_out_text": "\nReply STOP to opt out."
+  }
+}
